@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("bg.jpg");
+    background-size: cover;
+  }
+  a{
+    color: aliceblue;
+    top: 30px;
+    bottom: 30px;
+  }
+  .earth{
+    width: 400px;
+   height: 400px;
+    background-image: url("earthflat.jpg");
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  background: size 610px;
+  box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0)
+                inset  -6px 0 12px 4px rgba(255, 255,255,0.3);
+  animation: rotate  12s infinite linear;
+   
+  
+  }
+  @keyframes rotate{
+    
+      from {
+        background-position: 0px 0px;
+      }
+      to {
+        background-position: 610px 0px;
+      }
+    }
+    @keyframes rotate {
+      from {
+        background-position: 0px 0px;
+      }
+      to {
+        background-position: 610px 0px;
+      }
+  }
+  .orbit{
+    width: 600px;
+    height: 600px;
+    border: 1px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    animation: rotate-2 20s infinite linear;
+  }
+  @keyframes rotate-2 {
+    100%{
+     transform: translate(-50%,-50%)rotate(360deg); 
+    }
+  }
+  .moon{
+     
+    width: 140px;
+    height: 140px;
+    background: url("newsatellite.webp");
+    background-size: 220px;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+  }

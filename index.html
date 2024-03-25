@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width" initial-scale="1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+<style>
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.image-container img {
+    width: auto;
+    height: 100vh;
+    size: cover; 
+    position: center;
+
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.image-container .overlay p {
+  font-size: 50px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="image-container"  "col-12">
+  <img src="rocket.jpg" alt="rocket" width="100%" height="100%">
+  <div class="overlay">
+  <a href="satellite.html"> <p>Artificial satellite</p></a>
+  </div>
+</div>
+
+
+</body>
+</html>
